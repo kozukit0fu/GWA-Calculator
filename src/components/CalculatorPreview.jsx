@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 const CalculatorPreview = () => {
   const [subjects, setSubjects] = useState([
