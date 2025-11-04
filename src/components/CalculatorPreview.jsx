@@ -13,11 +13,7 @@ const CalculatorPreview = () => {
   const [errors, setErrors] = useState({})
   const [gwa, setGwa] = useState(0)
 
-  useEffect(() => {
-    calculateGWA()
-  }, [subjects])
-
-  const calculateGWA = () => {
+  const calculateGWA = useCallback(() => {
     if (subjects.length === 0) {
       setGwa(0)
       return
