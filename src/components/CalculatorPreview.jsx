@@ -29,7 +29,11 @@ const CalculatorPreview = () => {
 
     const calculatedGWA = totalUnits > 0 ? totalWeighted / totalUnits : 0
     setGwa(Math.round(calculatedGWA * 100) / 100)
-  }
+  }, [subjects])
+
+  useEffect(() => {
+    calculateGWA()
+  }, [calculateGWA])
 
   const validateInputs = () => {
     const newErrors = {}
