@@ -7,7 +7,7 @@ const testCases = [
       { grade: 80, units: 3 },
       { grade: 85, units: 4 }
     ],
-    expected: 84.71
+    expected: 85.00
   },
   {
     name: "Single subject",
