@@ -19,5 +19,5 @@ export default defineConfig({
       }
     }
   },
-  base: '/GWA-Calculator/'
+  base: process.env.NODE_ENV === 'production' ? '/GWA-Calculator/' : '/'
 })
